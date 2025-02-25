@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+    font-family: 'Nunito';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 20px;
+    background: #f0ebf8;
+    padding-bottom: 50px;
+}
+h1{
+    text-align: center;
+}
+#juego{
+    max-width: 800px;
+    margin: auto;
+}
+.contenedor-pregunta{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+label{
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#descargarRespuestas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer; 
+    transition: opacity 0.3s;
+}
+
+#descargarRespuestas[style*="pointer-events: none"] {
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede hacer clic */
+    opacity: 0.5; /* Cambia la opacidad para indicar que está deshabilitado */
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn{
+    position: relative;
+    height: 140px;
+    width: 140px;
+  }
+  .download {
+    fill: #028EFF;
+    stroke: #028EFF;
+    stroke-dashoffset: 10%;
+  }
+
+  .download--animate {
+    animation: circle-animate-1 2s forwards, circle-animate-2 .5s 4s forwards;
+  }
+
+  .download-btn {
+    position: relative;
+    height: 140px;
+    width: 140px;
+  }
+
+  .bar {
+    stroke: #028EFF;
+  }
+
+  .bar--animate {
+    animation-name: bar-animate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  .btn--icon {
+    transition: .3s;
+    position: absolute;
+    font-size: 54px;
+    left: 47px;
+    top: 40px;
+  }
+
+  .btn__arrow {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .btn__arrow--animate {
+    animation-name: arrow-animate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .btn__stop {
+    color: #028EFF;
+    opacity: 0;
+  }
+
+  .btn__stop--animate {
+    animation-name: stop-animate;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .btn__done {
+    color: #fff;
+    opacity: 0;
+  }
+
+  .btn__done--animate {
+    animation-name: done-animate;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes arrow-animate {
+    0% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes stop-animate {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes done-animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes circle-animate-1 {
+    0% {
+      fill: #028EFF;
+      stroke: #028EFF;
+    }
+    100% {
+      fill: #fff;
+      stroke: #D1EAFE;
+    }
+  }
+  @keyframes circle-animate-2 {
+    0% {
+      fill: #fff;
+      stroke: #D1EAFE;
+    }
+    100% {
+      fill: #3bc27a;
+      stroke: #3bc27a;
+    }
+  }
+  @keyframes bar-animate {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+      stroke-dashoffset: 565px;
+    }
+    5% {
+      opacity: 1;
+    }
+    25% {
+      stroke-dashoffset: 450px;
+    }
+    50% {
+      stroke-dashoffset: 350px;
+    }
+    75% {
+      stroke-dashoffset: 250px;
+    }
+    99% {
+      stroke-dashoffset: 20px;
+      stroke: #028EFF;
+    }
+    100% {
+      stroke-dashoffset: 5px;
+      stroke: #3bc27a;
+    }
+  }
+  
+
+  /* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Reduce el tamaño de la fuente */
+      padding-bottom: 30px; /* Ajusta el padding */
+  }
+
+  h1 {
+      font-size: 24px; /* Ajusta el tamaño del título */
+  }
+
+  .contenedor-pregunta {
+      padding: 5px; /* Reduce el padding en las preguntas */
+      margin-bottom: 15px; /* Reduce el margen inferior */
+  }
+
+  label {
+      font-size: 18px; /* Ajusta el tamaño de la fuente de las etiquetas */
+  }
+
+  input {
+      width: 20px; /* Ajusta el tamaño de los inputs */
+      height: 20px; /* Ajusta el tamaño de los inputs */
+  }
+
+  .download-btn {
+      height: 100px; /* Ajusta el tamaño del botón de descarga */
+      width: 100px; /* Ajusta el tamaño del botón de descarga */
+  }
+
+  .btn--icon {
+      font-size: 40px; /* Ajusta el tamaño de los iconos */
+      left: 30px; /* Ajusta la posición de los iconos */
+      top: 25px; /* Ajusta la posición de los iconos */
+  }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px; /* Reduce aún más el tamaño de la fuente */
+  }
+
+  h1 {
+      font-size: 20px; /* Ajusta el tamaño del título */
+  }
+
+  .contenedor-pregunta {
+      padding: 5px; /* Mantiene el padding reducido */
+  }
+
+  label {
+      font-size: 16px; /* Ajusta el tamaño de la fuente de las etiquetas */
+  }
+
+  .download-btn {
+      height: 80px; /* Ajusta el tamaño del botón de descarga */
+      width: 80px; /* Ajusta el tamaño del botón de descarga */
+  }
+
+  .btn--icon {
+      font-size: 30px; /* Ajusta el tamaño de los iconos */
+      left: 25px; /* Ajusta la posición de los iconos */
+      top: 20px; /* Ajusta la posición de los iconos */
+  }
+}
+
+
+
+

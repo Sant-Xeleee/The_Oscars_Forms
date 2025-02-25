@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Oscars 2025 - Votación</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1>Oscars 2025 - Formulario de Votación</h1>
+    
+    <form id="votacionForm">
+        <section id="juego"></section>
+        <div id="descargarRespuestas" class="download-btn" onclick="descargarRespuestas()">
+            <div class="btn__circle"> 
+                <svg width="140" height="140"> 
+                <circle r="60" cx="70" cy="70" class='download' stroke-width="10"></circle>
+             <circle class="bar" stroke-width="10" r="60" cx="70" cy="70" fill="transparent" stroke ='red' stroke-dasharray="565.48" stroke-dashoffset="565.48"></circle>              
+           </svg>
+             </div>
+           
+             <div class="btn__arrow btn--icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+             <div class="btn__stop btn--icon"><i class="fa fa-pause" aria-hidden="true"></i></div>
+             <div class="btn__done btn--icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
