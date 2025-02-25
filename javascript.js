@@ -21,11 +21,11 @@ const bd_juego = [
     {
         id:2,
         pregunta:"¿Mejor corto ficción?",
-        op0:"Alien",
-        op1:"Anuja",
-        op2:"Im not a robot",
-        op3:"The last ranger",
-        op4:"El hombre que no pudo permanecer en silencio",
+        op0: {texto: "A Lien", img: "Resources/CortoFiccion/A-Lien.jpg"},
+        op1: {texto: "Anuja", img: "Resources/CortoFiccion/Anuja.jpg"},
+        op2: {texto: "Im not a robot", img: "Resources/CortoFiccion/ImNotARobot.jpg"},
+        op3: {texto: "The last ranger", img: "Resources/CortoFiccion/TheLastRanger.jpg"},
+        op4: {texto: "El hombre que no pudo permanecer en silencio", img: "Resources/CortoFiccion/ElHombreQueNoPudoPermanecerEnSilencio.jpg"},
     },
     {
         id:3,
