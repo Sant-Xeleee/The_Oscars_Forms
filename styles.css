@@ -25,11 +25,18 @@ h1{
     margin-bottom: 20px;
     background: #fff;
 }
-label{
-    display: flex;
-    font-size: 22px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.opciones-container {
+  display: flex; /* Usar flexbox para alinear las columnas */
+  justify-content: space-between; /* Espacio entre las columnas */
+}
+
+.columna {
+  width: 48%; /* Ancho de cada columna */
+}
+label {
+  display: flex; /* Alinear el texto y la imagen */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 10px; /* Espacio entre las opciones */
 }
 
 input{

@@ -14,9 +14,9 @@ const bd_juego = [
         pregunta:"¿Mejor corto de animación?",
         op0: {texto: "Beautiful Men", img: "Resources/CortoAnimacion/BeautifulMen.jpg"},
         op1: {texto: "In the shadow of the cypress", img: "Resources/CortoAnimacion/InTheShadowoftheCypress.jpg"},
-        op2: {texto: "Magic Candies", img: "Resources/CortoAnimacion/BeautifulMen.jpg"},
-        op3: {texto: "Wander to Wonder", img: "Resources/CortoAnimacion/BeautifulMen.jpg"},
-        op4: {texto: "Yuck!", img: "Resources/CortoAnimacion/BeautifulMen.jpg"},
+        op2: {texto: "Magic Candies", img: "Resources/CortoAnimacion/MagicCandies.jpg"},
+        op3: {texto: "Wander to Wonder", img: "Resources/CortoAnimacion/WandertoWonder.jpg"},
+        op4: {texto: "Yuck!", img: "Resources/CortoAnimacion/Yuck.jpg"},
     },
     {
         id:2,
@@ -25,81 +25,195 @@ const bd_juego = [
         op1: {texto: "Anuja", img: "Resources/CortoFiccion/Anuja.jpg"},
         op2: {texto: "Im not a robot", img: "Resources/CortoFiccion/ImNotARobot.jpg"},
         op3: {texto: "The last ranger", img: "Resources/CortoFiccion/TheLastRanger.jpg"},
-        op4: {texto: "El hombre que no pudo permanecer en silencio", img: "Resources/CortoFiccion/ElHombreQueNoPudoPermanecerEnSilencio.jpg"},
+        op4: {texto: "The man who could not remain silent", img: "Resources/CortoFiccion/TheManWhoCouldNotRemainSilent.jpg"},
     },
     {
         id:3,
         pregunta:"¿Mejores efectos visuales?",
-        op0:"Alien:Romulus",
-        op1:"Better Men",
-        op2:"Dune: Parte 2",
-        op3:"Kingdom of the Planet of the Apes",
-        op4:"Wicked",
+        op0: {texto: "Alien: Romulus", img: "Resources/EfectosVisuales/AlienRomulus.jpg"},
+        op1: {texto: "Better Men", img: "Resources/EfectosVisuales/BetterMen.jpg"},
+        op2: {texto: "Dune: Parte 2", img: "Resources/EfectosVisuales/DuneParte2.jpg"},
+        op3: {texto: "Kingdom of the Planet of the Apes", img: "Resources/EfectosVisuales/KingdomOfThePlanetOfTheApes.jpg"},
+        op4: {texto: "Wicked", img: "Resources/EfectosVisuales/Wicked.jpg"},
     },
     {
         id:4,
         pregunta:"¿Mejor Maquillaje y Peluquería?",
-        op0:"A different Man",
-        op1:"Emilia Pérez",
-        op2:"Nosferatu",
-        op3:"La sustancia",
-        op4:"Wicked",
+        op0: {texto: "A different Man", img: "Resources/MaquillajePeluqueria/A-Different-Man.jpg"},
+        op1: {texto: "Emilia Pérez", img: "Resources/MaquillajePeluqueria/EmiliaPerez.jpg"},
+        op2: {texto: "Nosferatu", img: "Resources/MaquillajePeluqueria/Nosferatu.jpg"},
+        op3: {texto: "La sustancia", img: "Resources/MaquillajePeluqueria/LaSustancia.jpg"},
+        op4: {texto: "Wicked", img: "Resources/MaquillajePeluqueria/Wicked.jpg"},
     },
     {
         id:5,
         pregunta:"¿Mejor Diseño de Vestuario?",
-        op0:"A Complete Unknown",
-        op1:"Cónclave",
-        op2:"Gladiator II",
-        op3:"Nosferatu",
-        op4:"Wicked",
+        op0: {texto: "A Complete Unknown", img: "Resources/DiseñoVestuario/ACompleteUnknown.jpg"},
+        op1: {texto: "Cónclave", img: "Resources/DiseñoVestuario/Conclave.jpg"},
+        op2: {texto: "Gladiator II", img: "Resources/DiseñoVestuario/GladiatorII.jpeg"},
+        op3: {texto: "Nosferatu", img: "Resources/DiseñoVestuario/Nosferatu.jpg"},
+        op4: {texto: "Wicked", img: "Resources/DiseñoVestuario/Wicked.jpg"},
     },
     {
         id:6,
         pregunta:"¿Mejor Diseño de Producción?",
-        op0:"The Brutalist",
-        op1:"Conclave",
-        op2:"Dune: Parte 2",
-        op3:"Nosferatu",
-        op4:"Wicked",
+        op0: {texto: "The Brutalist", img: "Resources/DiseñoProduccion/TheBrutalist.jpg"},
+        op1: {texto: "Conclave", img: "Resources/DiseñoProduccion/Conclave.jpg"},
+        op2: {texto: "Dune: Parte 2", img: "Resources/DiseñoProduccion/DuneParte2.jpg"},
+        op3: {texto: "Nosferatu", img: "Resources/DiseñoProduccion/Nosferatu.jpg"},
+        op4: {texto: "Wicked", img: "Resources/DiseñoProduccion/Wicked.jpg"},
     },
     {
         id:7,
         pregunta:"¿Mejor Canción Original?",
-        op0:"El mal: Emilia Pérez",
-        op1:"The Journey: Seis triple ocho",
-        op2:"Like a bird: Las vidas de Sing Sing",
-        op3:"Mi camino: Emilia Pérez",
-        op4:"Never Too Late: Elton John: Never Too Late",
+        op0: {texto: "El mal: Emilia Pérez", img: "Resources/CancionOriginal/ElMalEmiliaPerez.jpeg"},
+        op1: {texto: "The Journey: Seis triple ocho", img: "Resources/CancionOriginal/TheJourneySeisTripleOcho.jpg"},
+        op2: {texto: "Like a bird: Las vidas de Sing Sing", img: "Resources/CancionOriginal/LikeABirdLasVidasDeSingSing.jpg"},
+        op3: {texto: "Mi camino: Emilia Pérez", img: "Resources/CancionOriginal/MiCaminoEmiliaPerez.jpeg"},
+        op4: {texto: "Never Too Late: Elton John", img: "Resources/CancionOriginal/NeverTooLateEltonJohn.jpeg"},
     },
     {
         id:8,
         pregunta:"¿Mejor Banda Sonora?",
-        op0:"The Brutalist",
-        op1:"Emilia Perez",
-        op2:"Cónclave",
-        op3:"Wicked",
-        op4:"The Wild Robot",
+        op0: {texto: "The Brutalist", img: "Resources/BandaSonora/TheBrutalist.png"},
+        op1: {texto: "Emilia Perez", img: "Resources/BandaSonora/EmiliaPerez.png"},
+        op2: {texto: "Cónclave", img: "Resources/BandaSonora/Conclave.png"},
+        op3: {texto: "Wicked", img: "Resources/BandaSonora/Wicked.png"},
+        op4: {texto: "The Wild Robot", img: "Resources/BandaSonora/TheWildRobot.png"},
     },
     {
         id:9,
         pregunta:"¿Mejor Sonido?",
-        op0:"A Complete Unknown",
-        op1:"Dune: Parte 2",
-        op2:"Emilia Perez",
-        op3:"Wicked",
-        op4:"Robot Salvaje",
+        op0: {texto: "A Complete Unknown", img: "Resources/Sonido/ACompleteUnknown.jpeg"},
+        op1: {texto: "Dune: Parte 2", img: "Resources/Sonido/DuneParte2.jpeg"},
+        op2: {texto: "Emilia Perez", img: "Resources/Sonido/EmiliaPerez.jpg"},
+        op3: {texto: "Wicked", img: "Resources/Sonido/Wicked.jpeg"},
+        op4: {texto: "Robot Salvaje", img: "Resources/Sonido/RobotSalvaje.jpeg"},
     },
     {
         id:10,
         pregunta:"¿Mejor Guion Original?",
-        op0:"Anora",
-        op1:"The Brutalist",
-        op2:"A real Pain",
-        op3:"September 5",
-        op4:"La sustancia",
+        op0: {texto: "Anora", img: "Resources/GuionOriginal/Anora.jpeg"},
+        op1: {texto: "The Brutalist", img: "Resources/GuionOriginal/TheBrutalist.jpg"},
+        op2: {texto: "A real Pain", img: "Resources/GuionOriginal/ARealPain.jpeg"},
+        op3: {texto: "September 5", img: "Resources/GuionOriginal/September5.jpeg"},
+        op4: {texto: "La sustancia", img: "Resources/GuionOriginal/LaSustancia.jpeg"},
+    },
+    {
+         //continuar...
+        id: 11,
+        pregunta: "¿Mejor Guion Adaptado?",
+        op0: { texto: "A Complete Unknown", img: "Resources/GuionAdaptado/ACompleteUnknown.jpeg" },
+        op1: { texto: "Cónclave", img: "Resources/GuionAdaptado/Conclave.png" },
+        op2: { texto: "Emilia Pérez", img: "Resources/GuionAdaptado/EmiliaPerez.jpg" },
+        op3: { texto: "Nickel Boys", img: "Resources/GuionAdaptado/NickelBoys.jpeg" },
+        op4: { texto: "Las vidas de Sing Sing", img: "Resources/GuionAdaptado/LasVidasDeSingSing.jpeg" },
+    },
+    {
+        id: 12,
+        pregunta: "¿Mejor Fotografía?",
+        op0: { texto: "The Brutalist", img: "Resources/Fotografia/TheBrutalist.jpg" },
+        op1: { texto: "Dune: Parte dos", img: "Resources/Fotografia/DuneParteDos.jpg" },
+        op2: { texto: "Emilia Pérez", img: "Resources/Fotografia/EmiliaPerez.jpg" },
+        op3: { texto: "María Callas", img: "Resources/Fotografia/MariaCallas.jpg" },
+        op4: { texto: "Nosferatu", img: "Resources/Fotografia/Nosferatu.jpg" },
+    },
+    {
+        id: 13,
+        pregunta: "¿Mejor Montaje?",
+        op0: { texto: "Anora", img: "Resources/Montaje/Anora.jpg" },
+        op1: { texto: "The Brutalist", img: "Resources/Montaje/TheBrutalist.jpg" },
+        op2: { texto: "Cónclave", img: "Resources/Montaje/Conclave.jpg" },
+        op3: { texto: "Emilia Pérez", img: "Resources/Montaje/EmiliaPerez.jpg" },
+        op4: { texto: "Wicked", img: "Resources/Montaje/Wicked.jpg" },
+    },
+    {
+        id: 14,
+        pregunta: "¿Mejor Documental?",
+        op0: { texto: "Black Box Diaries", img: "Resources/Documental/BlackBoxDiaries.jpg" },
+        op1: { texto: "No Other Land", img: "Resources/Documental/NoOtherLand.jpg" },
+        op2: { texto: "Porcelain War", img: "Resources/Documental/PorcelainWar.jpg" },
+        op3: { texto: "Soundtrack to a Coup d’Etat", img: "Resources/Documental/SoundtrackToACoup.jpg" },
+        op4: { texto: "Sugarcane", img: "Resources/Documental/Sugarcane.jpg" },
+    },
+    {
+        id: 15,
+        pregunta: "¿Mejor Película de Animación?",
+        op0: { texto: "Flow", img: "Resources/Animacion/Flow.jpg" },
+        op1: { texto: "Del Revés 2", img: "Resources/Animacion/DelReves2.jpg" },
+        op2: { texto: "Memorias de un Caracol", img: "Resources/Animacion/MemoriasDeUnCaracol.jpg" },
+        op3: { texto: "Wallace y Gromit: La venganza se sirve con plumas", img: "Resources/Animacion/WallaceYGromit.jpg" },
+        op4: { texto: "Robot Salvaje", img: "Resources/Animacion/RobotSalvaje.jpg" },
+    },
+    {
+        id: 16,
+        pregunta: "¿Mejor Película Internacional?",
+        op0: { texto: "Aún estoy aquí", img: "Resources/Internacional/AunEstoyAqui.jpg" },
+        op1: { texto: "La chica de la aguja", img: "Resources/Internacional/LaChicaDeLaAguja.jpg" },
+        op2: { texto: "Emilia Pérez", img: "Resources/Internacional/EmiliaPerez.jpg" },
+        op3: { texto: "La semilla de la higuera sagrada", img: "Resources/Internacional/LaSemillaDeLaHiguera.jpg" },
+        op4: { texto: "Flow, un mundo que salvar", img: "Resources/Internacional/Flow.jpg" },
+    },
+    {
+        id: 17,
+        pregunta: "¿Mejor Actor de reparto?",
+        op0: { texto: "Yura Borisov, por 'Anora'", img: "Resources/ActorReparto/YuraBorisov.jpg" },
+        op1: { texto: "Kieran Culkin, por 'A Real Pain'", img: "Resources/ActorReparto/KieranCulkin.jpg" },
+        op2: { texto: "Edward Norton, 'A Complete Unknown'", img: "Resources/ActorReparto/EdwardNorton.jpg" },
+        op3: { texto: "Guy Pearce, 'The Brutalist'", img: "Resources/ActorReparto/GuyPearce.jpg" },
+        op4: { texto: "Jeremy Strong, por 'The Apprentice'", img: "Resources/ActorReparto/JeremyStrong.jpg" },
+    },
+    {
+        id: 18,
+        pregunta: "¿Mejor Actriz de reparto?",
+        op0: { texto: "Monica Barbaro, por 'A Complete Unknown'", img: "Resources/ActrizReparto/MonicaBarbaro.jpg" },
+        op1: { texto: "Ariana Grande, por 'Wicked'", img: "Resources/ActrizReparto/ArianaGrande.jpg" },
+        op2: { texto: "Felicity Jones, por 'The Brutalist'", img: "Resources/ActrizReparto/FelicityJones.jpg" },
+        op3: { texto: "Isabella Rossellini, por 'Cón clave'", img: "Resources/ActrizReparto/IsabellaRossellini.jpg" },
+        op4: { texto: "Zoe Saldaña, por 'Emilia Pérez'", img: "Resources/ActrizReparto/ZoeSaldaña.jpg" },
+    },
+    {
+        id: 19,
+        pregunta: "¿Mejor Actor Principal?",
+        op0: { texto: "Adrian Brody, por 'The Brutalist'", img: "Resources/ActorPrincipal/AdrianBrody.jpg" },
+        op1: { texto: "Timothée Chalamet, por 'A Complete Unknown'", img: "Resources/ActorPrincipal/TimotheeChalamet.jpg" },
+        op2: { texto: "Colman Domingo, por 'Las vidas de Sing Sing'", img: "Resources/ActorPrincipal/ColmanDomingo.jpg" },
+        op3: { texto: "Ralph Fiennes, por 'Cónclave'", img: "Resources/ActorPrincipal/RalphFiennes.jpg" },
+        op4: { texto: "Sebastian Stan, por 'El aprendiz'", img: "Resources/ActorPrincipal/SebastianStan.jpg" },
+    },
+    {
+        id: 20,
+        pregunta: "¿Mejor Actriz Principal?",
+        op0: { texto: "Cynthia Erivo, por 'Wicked'", img: "Resources/ActrizPrincipal/CynthiaErivo.jpg" },
+        op1: { texto: "Karla Sofía Gascón, por 'Emilia Pérez'", img: "Resources/ActrizPrincipal/KarlaSofiaGascon.jpg" },
+        op2: { texto: "Mikey Madison, por 'Anora'", img: "Resources/ActrizPrincipal/MikeyMadison.jpg" },
+        op3: { texto: "Demi Moore, por 'La sustancia'", img: "Resources/ActrizPrincipal/DemiMoore.jpg" },
+        op4: { texto: "Fernanda Torres, por 'Aún estoy aquí'", img: "Resources/ActrizPrincipal/FernandaTorres.jpg" },
+    },
+    {
+        id: 21,
+        pregunta: "¿Mejor Director?",
+        op0: { texto: "Sean Baker, por 'Anora'", img: "Resources/Director/SeanBaker.jpg" },
+        op1: { texto: "Brady Corbet, por 'The Brutalist'", img: "Resources/Director/BradyCorbet.jpg" },
+        op2: { texto: "James Mangold, por 'A Complete Unknown'", img: "Resources/Director/JamesMangold.jpg" },
+        op3: { texto: "Jacques Audiard, por 'Emilia Pérez'", img: "Resources/Director/JacquesAudiard.jpg" },
+        op4: { texto: "Coralie Fargeat, por 'La sustancia'", img: "Resources/Director/CoralieFargeat.jpg" },
+    },
+    {
+        id: 22,
+        pregunta: "¿Mejor Película?",
+        op0: { texto: "'Anora'", img: "Resources/Pelicula/Anora.jpeg" },
+        op1: { texto: "'The Brutalist'", img: "Resources/Pelicula/TheBrutalist.jpg" },
+        op2: { texto: "'A Complete Unknown'", img: "Resources/Pelicula/ACompleteUnknown.jpeg" },
+        op3: { texto: "'Cónclave'", img: "Resources/Pelicula/Conclave.jpg" },
+        op4: { texto: "'Dune: Parte dos'", img: "Resources/Pelicula/DuneParte2.jpeg" },
+        op5: { texto: "'Emilia Pérez'", img: "Resources/Pelicula/EmiliaPerez.jpg" },
+        op6: { texto: "'I’m Still Here'", img: "Resources/Pelicula/ImStillHere.jpeg" },
+        op7: { texto: "'Nickel Boys'", img: "Resources/Pelicula/NickelBoys.jpg" },
+        op8: { texto: "'La sustancia'", img: "Resources/Pelicula/LaSustancia.jpeg" },
+        op9: { texto: "'Wicked'", img: "Resources/Pelicula/Wicked.jpeg" },
     }
-]
+];
 
 //para guardar las respuestas elegidas
 let respuestas = [];
@@ -117,12 +231,31 @@ function cargarPreguntas(){
     h2.textContent = pregunta.id + 1 + " - " + pregunta.pregunta;
     contenedor.appendChild(h2);
     const opciones = document.createElement("div");
+    opciones.className = "opciones-container"; // Clase para el contenedor de opciones
 
-    for (let i = 0; i <= 4; i++) {
-        const label = crearLabel(i, pregunta[`op${i}`].texto, pregunta[`op${i}`].img);
-        opciones.appendChild(label);
+    // Crear dos contenedores para las columnas
+    const columnaIzquierda = document.createElement("div");
+    columnaIzquierda.className = "columna";
+    
+    const columnaDerecha = document.createElement("div");
+    columnaDerecha.className = "columna";
+
+    // Llenar las columnas con las opciones
+    for (let i = 0; i < 10; i++) {
+        if (pregunta[`op${i}`]) {
+            const label = crearLabel(i, pregunta[`op${i}`].texto, pregunta[`op${i}`].img);
+            if (i < 5) {
+                columnaIzquierda.appendChild(label); // Primeras 5 en la columna izquierda
+            } else {
+                columnaDerecha.appendChild(label); // Otras 5 en la columna derecha
+            }
+        }
     }
 
+    // Agregar las columnas al contenedor de opciones
+    opciones.appendChild(columnaIzquierda);
+    opciones.appendChild(columnaDerecha);
+    
     contenedor.appendChild(opciones);
     document.getElementById("juego").appendChild(contenedor);
 }
