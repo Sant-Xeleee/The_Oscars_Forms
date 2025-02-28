@@ -315,14 +315,14 @@ function descargarRespuestas() {
             opcionSeleccionada = pregunta[`op${respuesta}`]; // Es una cadena de texto
         }
 
-        return `Pregunta ${index + 1}: ${opcionSeleccionada}`;
+        return `${index + 1}.- ${pregunta.pregunta}: ${opcionSeleccionada}`;
     }).join('\n');
 
     const blob = new Blob([respuestasTexto], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'respuestas.txt';
+    a.download = 'Quiniela_TheOscars_2025.txt';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

@@ -265,7 +265,7 @@ main {
 }
 
 /* Media Queries para pantallas más pequeñas */
-@media (max-width: 480px) {
+@media (max-width: 410px) {
   body {
       font-size: 14px; /* Reduce aún más el tamaño de la fuente */
   }
@@ -292,6 +292,9 @@ main {
       left: 25px; /* Ajusta la posición de los iconos */
       top: 20px; /* Ajusta la posición de los iconos */
   }
+  .btn__circle {
+    top: 120px; /* Ajusta el tamaño del círculo en pantallas pequeñas */
+ }
 }
 
 
