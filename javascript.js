@@ -322,7 +322,7 @@ function descargarRespuestas() {
             opcionSeleccionada = pregunta[`op${respuesta}`]; // Es una cadena de texto
         }
 
-        return `${index + 1}.- ${pregunta.pregunta}: ${opcionSeleccionada}`;
+        return `${index + 1}.- ${pregunta.pregunta}: "${opcionSeleccionada}"`;
     }).join('\n');
 
     const blob = new Blob([respuestasTexto], { type: 'text/plain;charset=utf-8' });
