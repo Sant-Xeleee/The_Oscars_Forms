@@ -28,15 +28,21 @@ h1{
 .opciones-container {
   display: flex; /* Usar flexbox para alinear las columnas */
   justify-content: space-between; /* Espacio entre las columnas */
+  flex-wrap: wrap; /* Permitir que las columnas se envuelvan */
 }
 
 .columna {
   width: 48%; /* Ancho de cada columna */
+  margin-top: 20px; /* Espacio entre las columnas */
 }
 label {
   display: flex; /* Alinear el texto y la imagen */
   align-items: center; /* Centrar verticalmente */
   margin-bottom: 10px; /* Espacio entre las opciones */
+}
+label.selected {
+  border: 2px solid #028EFF; /* Cambia el color del borde al seleccionar */
+  background-color: rgba(2, 142, 255, 0.1); /* Color de fondo suave */
 }
 
 input{
@@ -262,6 +268,7 @@ main {
       left: 30px; /* Ajusta la posición de los iconos */
       top: 25px; /* Ajusta la posición de los iconos */
   }
+
 }
 
 /* Media Queries para pantallas más pequeñas */
@@ -295,6 +302,7 @@ main {
   .btn__circle {
     top: 120px; /* Ajusta el tamaño del círculo en pantallas pequeñas */
  }
+
 }
 
 

@@ -189,8 +189,7 @@ const bd_juego = [
         op3: { texto: "Demi Moore, por 'La sustancia'", img: "Resources/ActrizPrincipal/DemiMoore.jpg" },
         op4: { texto: "Fernanda Torres, por 'Aún estoy aquí'", img: "Resources/ActrizPrincipal/FernandaTorres.jpg" },
     },
-    {
-        //continuar...
+    {       
         id: 21,
         pregunta: "¿Mejor Director?",
         op0: { texto: "Sean Baker, por 'Anora'", img: "Resources/Director/SeanBaker.jpg" },
@@ -294,8 +293,16 @@ for(i=0;i < bd_juego.length;i++){
 }
 
 //Función que carga la opción elegida en el arreglo respuestas.
-function seleccionar(pos, opElegida){
+function seleccionar(pos, opElegida) {
     respuestas[pos] = opElegida;
+
+    // Limpiar selección anterior
+    const labels = document.querySelectorAll(`label`);
+    labels.forEach(label => label.classList.remove('selected'));
+
+    // Agregar clase 'selected' al label correspondiente
+    const selectedLabel = document.getElementById(`l${pos}${opElegida}`);
+    selectedLabel.classList.add('selected');
 }
 
 // Función para descargar las respuestas
