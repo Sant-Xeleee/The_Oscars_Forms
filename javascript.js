@@ -113,7 +113,7 @@ const bd_juego = [
         pregunta: "¿Mejor Fotografía?",
         op0: { texto: "The Brutalist", img: "Resources/Fotografia/TheBrutalist.jpg" },
         op1: { texto: "Dune: Parte dos", img: "Resources/Fotografia/DuneParteDos.jpeg" },
-        op2: { texto: "Emilia Pérez", img: "Resources/Fotografia/EmiliaPerez.jpeg" },
+        op2: { texto: "Emilia Pérez", img: "Resources/Fotografia/EmiliaPerez.jpg" },
         op3: { texto: "María Callas", img: "Resources/Fotografia/MariaCallas.jpeg" },
         op4: { texto: "Nosferatu", img: "Resources/Fotografia/Nosferatu.jpg" },
     },
@@ -325,7 +325,7 @@ function descargarRespuestas() {
         return `${index + 1}.- ${pregunta.pregunta}: ${opcionSeleccionada}`;
     }).join('\n');
 
-    const blob = new Blob([respuestasTexto], { type: 'text/plain' });
+    const blob = new Blob([respuestasTexto], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
